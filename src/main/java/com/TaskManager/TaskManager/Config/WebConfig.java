@@ -11,7 +11,7 @@ public class WebConfig {
         return new WebMvcConfigurer() {
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins("http://localhost:3000", "http://localhost:3000")
+                        .allowedOrigins("https://task-manager-frontend-production-f162.up.railway.app", "https://task-manager-frontend-production-f162.up.railway.app")
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS")
                         .allowedHeaders("*")
                         .allowCredentials(true);
